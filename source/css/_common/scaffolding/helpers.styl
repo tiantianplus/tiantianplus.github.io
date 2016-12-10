@@ -33,17 +33,27 @@
 
 .pullquote {
   width: 45%;
-
   &.left {
     float: left;
     margin-left: 5px;
     margin-right: 10px;
   }
-
   &.right {
     float: right;
     margin-left: 10px;
     margin-right: 5px;
+  }
+}
+
+.highlight table, .gist table {
+  width: auto;
+
+  td { border: none; }
+}
+.highlight, .gist {
+  a {
+    color: $link-hover-color !important;
+    text-decoration: none !important;
   }
 }
 
@@ -77,8 +87,7 @@
   background: inherit;
   opacity: 0.5;
   &:focus { opacity: 1; }
-}
-
+};
 .search-icon {
   position: absolute;
   top: 9px;
